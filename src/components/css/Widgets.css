@@ -1,3 +1,34 @@
+.widgets::-webkit-scrollbar{
+    display:none;
+}
 .widgets {
     flex: 0.3;
+    overflow-y: scroll;
+}
+
+.widgets-search-input {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 5px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--twitter-background);
+}
+
+.widgets-search-input input {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.widget-search-icon {
+    color: gray;
+    margin-right: 10px;
+}
+
+.widget-posts {
+    margin: 10px 0 0 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--twitter-background);
 }
