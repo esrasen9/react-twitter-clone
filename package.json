@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@mui/icons-material": "^5.0.4"
+    "@mui/icons-material": "^5.0.4",
+    "react-flip-move": "^3.0.4"
   }
 }

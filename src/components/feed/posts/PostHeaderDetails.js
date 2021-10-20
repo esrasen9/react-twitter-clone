@@ -1,19 +1,19 @@
 import React from 'react';
 import VerifiedIcon from "@mui/icons-material/Verified";
 
-const PostHeaderDetails = () => {
+const PostHeaderDetails = ({displayName,username,postText}) => {
     return (
         <div className="post-header-details">
             <div>
                 <h3>
-                    Esra Şen {" "}
+                    {displayName} {" "}
                     <VerifiedIcon className="post-badge"/>
                     <span className="post-username">
-                                @esrasen.9</span>
+                                {username}</span>
                 </h3>
             </div>
             <div className="post-caption">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, velit.</p>
+                <p>{postText}</p>
             </div>
         </div>
     );

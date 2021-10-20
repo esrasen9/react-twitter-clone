@@ -5,10 +5,10 @@ const WidgetPosts = () => {
     return (
         <div className="widget-posts">
             <h2>What's happening?</h2>
-            <TwitterTweetEmbed tweetId="1449829864878526464"/>
-            <TwitterTweetEmbed tweetId="1449827532124135429" />
-            <TwitterTweetEmbed tweetId="1449811329942949891" />
             <TwitterTweetEmbed tweetId="1299426521397039108" />
+            <TwitterTweetEmbed tweetId="1449811329942949891" />
+            <TwitterTweetEmbed tweetId="1449827532124135429" />
+            <TwitterTweetEmbed tweetId="1449829864878526464"/>
             <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="CodeNewbies"

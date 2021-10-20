@@ -1,17 +1,17 @@
-import React from 'react';
+import React,{forwardRef} from 'react';
 import "../../css/Post.css";
 import PostFooter from "./PostFooter";
 import PostHeader from "./PostHeader";
-const Post = () => {
+const Post = forwardRef(({post},ref) => {
     return (
-        <div className="post">
-            <PostHeader />
+        <div className="post" ref={ref}>
+            <PostHeader post={post} />
             <div className="post-body">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZRul8ITPJ72owUhxzQmez7jtKhl9LhUYsoA&usqp=CAU" alt="post"/>
+                <img src={post.post.imageUrl} alt="post"/>
             </div>
-            <PostFooter />
+            <PostFooter/>
         </div>
-    );
-}
+    );}
+);
 
 export default Post;
